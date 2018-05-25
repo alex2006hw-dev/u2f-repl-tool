@@ -1,0 +1,21 @@
+{
+  "name": "security-system",
+  "version": "1.0.0",
+  "description": "This system is a REPL that emulates a security system.   It tries to authorize user when the key is inserted to USB port.   Prints == ACCESS GRANTED == when user is authenticated.   User keys are kept in `keys.json` file.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "UserToken Admin <admin@usertoken.com> (https://www.usertoken.com)",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.1",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "repl": "^0.1.3",
+    "u2f": "^0.1.3",
+    "u2f-client": "git+https://github.com/evaluation-alex/u2f-client.git",
+    "util": "^0.10.3"
+  }
+}
